@@ -6,10 +6,8 @@ $username = "root";
 $password = "";
 $dbname = "jerusalem_gates";
 
-// إنشاء الاتصال
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// التحقق من الاتصال
 if ($conn->connect_error) {
     die(json_encode(["status" => "error", "message" => "Connection failed: " . $conn->connect_error]));
 }
