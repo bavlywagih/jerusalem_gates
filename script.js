@@ -1,11 +1,9 @@
-// Load the add gate form only once
 var addGateFormContainer = document.getElementById('addGateFormContainer');
 fetch('add_gate_form.html')
     .then(response => response.text())
     .then(data => {
         addGateFormContainer.innerHTML = data;
 
-        // Add AJAX form submission
         document.getElementById('addGateForm').addEventListener('submit', function(event) {
             event.preventDefault();
             var formData = new FormData(this);
@@ -35,7 +33,6 @@ fetch('add_gate_form.html')
         console.error('Error loading form:', error);
     });
 
-// Display or hide the add gate form
 document.getElementById('showAddGateForm').addEventListener('click', function() {
     if (addGateFormContainer.style.display === 'block') {
         addGateFormContainer.style.display = 'none';
@@ -44,7 +41,6 @@ document.getElementById('showAddGateForm').addEventListener('click', function() 
     }
 });
 
-// Fetch and display gates
 function fetchGates() {
     fetch('display_gates.php')
         .then(response => response.json())
