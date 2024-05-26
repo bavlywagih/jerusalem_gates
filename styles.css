@@ -1,0 +1,111 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Gate styles */
+/* Gate styles */
+#gates {
+    display: flex;
+    flex-direction: column-reverse; /* تغيير الترتيب إلى تنازلي */
+}
+
+.gate {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.gate h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gate p {
+    margin-bottom: 10px;
+}
+
+.gate img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+/* Add Gate Form styles */
+#addGateFormContainer {
+    display: none;
+    margin-top: 20px;
+}
+
+#addGateFormContainer form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#addGateFormContainer label,
+#addGateFormContainer input,
+#addGateFormContainer textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#addGateFormContainer input[type="submit"] {
+    width: auto;
+}
+
+#response {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Add New Gate button styles */
+#showAddGateForm {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#showAddGateForm:hover {
+    background-color: #45a049;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    width: auto;
+}
+#response {
+    margin-top: 20px;
+}
