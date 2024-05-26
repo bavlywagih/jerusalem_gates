@@ -1,4 +1,3 @@
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -15,11 +14,9 @@ p {
     font-size: 16px;
 }
 
-/* Gate styles */
-/* Gate styles */
 #gates {
     display: flex;
-    flex-direction: column-reverse; /* تغيير الترتيب إلى تنازلي */
+    flex-direction: column-reverse; 
 }
 
 .gate {
@@ -48,7 +45,6 @@ p {
 }
 
 
-/* Add Gate Form styles */
 #addGateFormContainer {
     display: none;
     margin-top: 20px;
@@ -76,7 +72,6 @@ p {
     text-align: center;
 }
 
-/* Add New Gate button styles */
 #showAddGateForm {
     display: block;
     margin: 0 auto 20px auto;
